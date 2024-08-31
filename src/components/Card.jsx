@@ -1,5 +1,7 @@
 import React from 'react'
 import Avatar from './Avatar'
+import Paragraphs from './Paragraphs'
+
 
 function Card (props) {
     return (
@@ -9,8 +11,10 @@ function Card (props) {
           <Avatar img={props.img} />
         </div>
         <div className="bottom">
-          <p className="info">{props.phone}</p>
-          <p className="info">{props.email}</p>
+          <Paragraphs paraInfo={props.phone}
+          />
+          <Paragraphs paraInfo={props.email}
+          />
         </div>
       </div>
     )
