@@ -1,12 +1,14 @@
-export const Contact = [
+const Contact = [
     {
-      name: "Beyonce",
+      id: 1,
+      name: "Ronaldo",
       imgURL:
-        "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
+        "https://pbs.twimg.com/profile_images/1528775264204906498/oufC8Yu8_400x400.jpg",
       phone: "+123 456 789",
-      email: "b@beyonce.com"
+      email: "gmail@cr7.com"
     },
     {
+      id: 2,
       name: "Jack Bauer",
       imgURL:
         "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
@@ -14,6 +16,7 @@ export const Contact = [
       email: "jack@nowhere.com"
     },
     {
+      id: 3,
       name: "Chuck Norris",
       imgURL:
         "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
