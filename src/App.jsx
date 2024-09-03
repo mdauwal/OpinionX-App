@@ -1,23 +1,17 @@
 import React from "react";
 import './App.css'
-import Entry from "./components/Entry";
-import Emojipedia from "./components/Emojipedia";
-
-function createEmoji (emojis) {
-  return <Entry key={emojis.id} emoji={emojis.emoji} heading={emojis.name} subheading={emojis.meaning} />
-
-}
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Notes from "./components/Notes";
+import Note from "./components/Note";
 
 function App() {
   return (
     <div>
-      <h1>
-        <span>emojipedia</span>
-      </h1>
+      <Header />
+      {Notes.map( props => <Note key={props.id} title={props.title} content={props.content} />)}
+      <Footer />
 
-      <dl className="dictionary">
-        {Emojipedia.map(createEmoji)}
-      </dl>
     </div>
   );
 }
