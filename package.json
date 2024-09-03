@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "feedback",
+=======
+  "name": "myapp",
+>>>>>>> 69ea97d702e782ee15cf050188d3ba35294c0976
   "version": "0.1.0",
   "private": true,
   "dependencies": {
